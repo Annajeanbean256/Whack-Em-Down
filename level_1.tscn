@@ -1,0 +1,284 @@
+[gd_scene load_steps=17 format=3 uid="uid://lki2ae0uu5pa"]
+
+[ext_resource type="Script" uid="uid://dtkuqjcibb1ra" path="res://level_1.gd" id="1_1o446"]
+[ext_resource type="PackedScene" uid="uid://dcy0tbh64kgmy" path="res://back.tscn" id="2_vdsbi"]
+[ext_resource type="StyleBox" uid="uid://dokt5nli0djox" path="res://new_world.tres" id="3_l3bgt"]
+[ext_resource type="Texture2D" uid="uid://325iw8p18k64" path="res://g new try block.jpg" id="4_dw0gb"]
+[ext_resource type="Texture2D" uid="uid://cpq5lp82tc3r8" path="res://f new block.jpg" id="5_r14r6"]
+[ext_resource type="Texture2D" uid="uid://d2owk8s8iorbw" path="res://hope good block size.jpg" id="6_e5oej"]
+[ext_resource type="Texture2D" uid="uid://d3bbkc6sqcnhm" path="res://d new test block.jpg" id="7_4wtfn"]
+[ext_resource type="PackedScene" uid="uid://bpgjsqusk4ipd" path="res://A block.tscn" id="8_yg8oi"]
+[ext_resource type="PackedScene" uid="uid://dnlq8vyakjc22" path="res://D block.tscn" id="10_esoy5"]
+[ext_resource type="FontFile" uid="uid://delh5xf0fvqgx" path="res://fonts/Xolonium-Regular.ttf" id="11_1pe0h"]
+[ext_resource type="Script" uid="uid://dbqv82bhr7ag5" path="res://blocks_exsit.gd" id="12_jjgao"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_opg3c"]
+size = Vector2(991.5, 376.003)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d7cal"]
+size = Vector2(1020, 355)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q60yl"]
+size = Vector2(280, 2317)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6kt2j"]
+size = Vector2(458, 2286)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_o61je"]
+size = Vector2(194.5, 1534.5)
+
+[node name="level 1" type="Node"]
+script = ExtResource("1_1o446")
+
+[node name="back" parent="." instance=ExtResource("2_vdsbi")]
+position = Vector2(469, 879)
+
+[node name="sir wallss" type="StaticBody2D" parent="."]
+disable_mode = 1
+collision_mask = 30
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="sir wallss"]
+position = Vector2(469.25, 1725)
+shape = SubResource("RectangleShape2D_opg3c")
+one_way_collision = true
+
+[node name="Area2D" type="Area2D" parent="sir wallss"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="sir wallss/Area2D"]
+position = Vector2(472, 1714.5)
+shape = SubResource("RectangleShape2D_d7cal")
+debug_color = Color(0.887093, 0.195409, 0.659893, 0.42)
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_top = 1535.0
+offset_right = 924.0
+offset_bottom = 1715.0
+color = Color(0.847059, 0.741176, 0.984314, 0.407843)
+
+[node name="menu" type="Button" parent="ColorRect"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -193.0
+offset_top = -35.0
+offset_right = -46.0
+offset_bottom = 34.0
+grow_horizontal = 0
+grow_vertical = 2
+size_flags_horizontal = 10
+size_flags_vertical = 4
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+theme_override_styles/focus = ExtResource("3_l3bgt")
+theme_override_styles/disabled_mirrored = ExtResource("3_l3bgt")
+theme_override_styles/disabled = ExtResource("3_l3bgt")
+theme_override_styles/hover_pressed_mirrored = ExtResource("3_l3bgt")
+theme_override_styles/hover_pressed = ExtResource("3_l3bgt")
+theme_override_styles/hover_mirrored = ExtResource("3_l3bgt")
+theme_override_styles/hover = ExtResource("3_l3bgt")
+theme_override_styles/pressed_mirrored = ExtResource("3_l3bgt")
+theme_override_styles/pressed = ExtResource("3_l3bgt")
+theme_override_styles/normal_mirrored = ExtResource("3_l3bgt")
+theme_override_styles/normal = ExtResource("3_l3bgt")
+text = "Menu"
+
+[node name="g button" type="TextureButton" parent="ColorRect"]
+visible = false
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 51.0
+offset_top = -50.0
+offset_right = 151.0
+offset_bottom = 51.0
+grow_vertical = 2
+texture_normal = ExtResource("4_dw0gb")
+texture_pressed = ExtResource("4_dw0gb")
+
+[node name="f button" type="TextureButton" parent="ColorRect"]
+visible = false
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 373.0
+offset_top = -50.0
+offset_right = 473.0
+offset_bottom = 51.0
+grow_vertical = 2
+texture_normal = ExtResource("5_r14r6")
+texture_pressed = ExtResource("5_r14r6")
+
+[node name="a button" type="TextureButton" parent="ColorRect"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 28.0
+offset_top = -50.0
+offset_right = 128.0
+offset_bottom = 51.0
+grow_vertical = 2
+texture_normal = ExtResource("6_e5oej")
+texture_pressed = ExtResource("6_e5oej")
+
+[node name="d button" type="TextureButton" parent="ColorRect"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 181.0
+offset_top = -50.0
+offset_right = 281.0
+offset_bottom = 50.0
+grow_vertical = 2
+texture_normal = ExtResource("7_4wtfn")
+texture_pressed = ExtResource("7_4wtfn")
+
+[node name="wall" type="StaticBody2D" parent="."]
+position = Vector2(434, 1944)
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="wall"]
+position = Vector2(-573, -784.5)
+shape = SubResource("RectangleShape2D_q60yl")
+
+[node name="walls" type="StaticBody2D" parent="."]
+position = Vector2(924, 0)
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="walls"]
+position = Vector2(230, 1133)
+shape = SubResource("RectangleShape2D_6kt2j")
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(685, -76)
+script = ExtResource("12_jjgao")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-251, 815)
+shape = SubResource("RectangleShape2D_o61je")
+debug_color = Color(0.587641, 0.827811, 3.85046e-07, 0.42)
+
+[node name="youlose" type="Label" parent="Area2D"]
+visible = false
+offset_left = -574.0
+offset_top = 552.0
+offset_right = 201.0
+offset_bottom = 757.0
+theme_override_font_sizes/font_size = 150
+text = "You Lose "
+
+[node name="Button" type="Button" parent="Area2D"]
+visible = false
+offset_left = -435.0
+offset_top = 757.0
+offset_right = -87.0
+offset_bottom = 875.0
+theme_override_font_sizes/font_size = 80
+text = "Try Again!"
+
+[node name="youwin" type="Label" parent="Area2D"]
+visible = false
+offset_left = -574.0
+offset_top = 552.0
+offset_right = 61.0
+offset_bottom = 955.0
+theme_override_font_sizes/font_size = 150
+text = "You Win!"
+
+[node name="levels" type="Button" parent="Area2D"]
+visible = false
+offset_left = -473.0
+offset_top = 757.0
+offset_right = 9.0
+offset_bottom = 875.0
+theme_override_font_sizes/font_size = 80
+text = "Level Select"
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 30.0
+one_shot = true
+
+[node name="objects" type="Node2D" parent="."]
+
+[node name="A block" parent="objects" instance=ExtResource("8_yg8oi")]
+position = Vector2(434, 1485)
+
+[node name="A block2" parent="objects" instance=ExtResource("8_yg8oi")]
+position = Vector2(434, 1271)
+
+[node name="D block" parent="objects" instance=ExtResource("10_esoy5")]
+position = Vector2(434, 1379)
+
+[node name="D block2" parent="objects" instance=ExtResource("10_esoy5")]
+position = Vector2(434, 1160)
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+offset_left = 151.0
+offset_top = 60.0
+offset_right = 776.0
+offset_bottom = 278.0
+color = Color(1, 1, 1, 0.882353)
+
+[node name="coins" type="Label" parent="."]
+offset_left = 181.0
+offset_top = 156.0
+offset_right = 773.0
+offset_bottom = 337.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("11_1pe0h")
+theme_override_font_sizes/font_size = 100
+text = "Coins ="
+
+[node name="coinvalue" type="Label" parent="."]
+offset_left = 601.0
+offset_top = 156.0
+offset_right = 672.0
+offset_bottom = 276.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("11_1pe0h")
+theme_override_font_sizes/font_size = 100
+text = "00"
+
+[node name="timerlable" type="Label" parent="."]
+offset_left = 313.0
+offset_top = 60.0
+offset_right = 784.0
+offset_bottom = 265.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("11_1pe0h")
+theme_override_font_sizes/font_size = 100
+text = "00:00"
+
+[connection signal="pressed" from="ColorRect/menu" to="." method="_on_menu_pressed"]
+[connection signal="board_clear_of_boxes" from="Area2D" to="." method="_on_area_2d_board_clear_of_boxes"]
+[connection signal="board_clear_of_boxes" from="Area2D" to="Area2D" method="_on_board_clear_of_boxes"]
+[connection signal="reset" from="Area2D" to="Area2D" method="_on_reset"]
+[connection signal="pressed" from="Area2D/Button" to="Area2D" method="_on_button_pressed"]
+[connection signal="pressed" from="Area2D/levels" to="." method="_on_levels_pressed"]
+[connection signal="pressed" from="Area2D/levels" to="Area2D" method="_on_levels_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="Timer" to="Area2D" method="_on_timer_timeout"]

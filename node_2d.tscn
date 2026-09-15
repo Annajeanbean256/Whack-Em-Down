@@ -1,0 +1,282 @@
+[gd_scene load_steps=28 format=3 uid="uid://y8y3pgkiy2ap"]
+
+[ext_resource type="Script" uid="uid://buj07vr0iyk5b" path="res://CharacterBody2D4.gd" id="1_0h7xl"]
+[ext_resource type="PackedScene" uid="uid://dcy0tbh64kgmy" path="res://back.tscn" id="1_bxuwa"]
+[ext_resource type="Script" uid="uid://q5a78218lqdm" path="res://node_2d.gd" id="1_cg4t5"]
+[ext_resource type="Texture2D" uid="uid://crit1y4fcj7n4" path="res://art/playerGrey_up1.png" id="2_rxdrv"]
+[ext_resource type="FontFile" uid="uid://delh5xf0fvqgx" path="res://fonts/Xolonium-Regular.ttf" id="2_wu1h1"]
+[ext_resource type="Script" uid="uid://cjwd5weayw3be" path="res://f block.gd" id="5_ikhex"]
+[ext_resource type="Script" uid="uid://dtwdacj0lpd0h" path="res://d block.gd" id="7_1b5pt"]
+[ext_resource type="Script" uid="uid://ufodlf7pk2ek" path="res://block a.gd" id="9_k0jd3"]
+[ext_resource type="Script" uid="uid://clrta5s1ini6s" path="res://Area2D.gd" id="9_x7xfw"]
+[ext_resource type="PackedScene" uid="uid://uwwcmbm80ddr" path="res://start.tscn" id="10_3wm5s"]
+[ext_resource type="Script" uid="uid://lh2bcfyqtqqx" path="res://block g.gd" id="10_apcma"]
+[ext_resource type="Texture2D" uid="uid://325iw8p18k64" path="res://g new try block.jpg" id="11_edukf"]
+[ext_resource type="Texture2D" uid="uid://d2owk8s8iorbw" path="res://hope good block size.jpg" id="12_uy5kp"]
+[ext_resource type="Texture2D" uid="uid://cpq5lp82tc3r8" path="res://f new block.jpg" id="13_akpbm"]
+[ext_resource type="Texture2D" uid="uid://d3bbkc6sqcnhm" path="res://d new test block.jpg" id="14_bj55c"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6wvt4"]
+size = Vector2(100, 138)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pged2"]
+size = Vector2(280, 2317)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1pkdc"]
+size = Vector2(458, 2286)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_54pbl"]
+size = Vector2(1077, 587)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h3koj"]
+size = Vector2(1059.5, 230)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xygrr"]
+size = Vector2(100, 100.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v5igt"]
+size = Vector2(100, 101)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dkyhw"]
+size = Vector2(101.25, 103)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n67yv"]
+size = Vector2(101, 104)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_frc65"]
+size = Vector2(99, 99.75)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_arffh"]
+size = Vector2(103.5, 99)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1m3hu"]
+size = Vector2(1023.25, 361.25)
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_cg4t5")
+
+[node name="back" parent="." instance=ExtResource("1_bxuwa")]
+
+[node name="player" type="CharacterBody2D" parent="."]
+visible = false
+position = Vector2(-1021, 1353)
+script = ExtResource("1_0h7xl")
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="player"]
+texture = ExtResource("2_rxdrv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="player"]
+position = Vector2(1, 3)
+shape = SubResource("RectangleShape2D_6wvt4")
+
+[node name="wall" type="StaticBody2D" parent="."]
+position = Vector2(434, 1944)
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="wall"]
+position = Vector2(-573, -784.5)
+shape = SubResource("RectangleShape2D_pged2")
+
+[node name="walls" type="StaticBody2D" parent="."]
+position = Vector2(924, 0)
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="walls"]
+position = Vector2(230, 1133)
+shape = SubResource("RectangleShape2D_1pkdc")
+
+[node name="wallss" type="StaticBody2D" parent="." groups=["wallss"]]
+position = Vector2(434, 1949)
+metadata/_edit_group_ = true
+
+[node name="Area1d" type="Area2D" parent="wallss"]
+modulate = Color(0.52549, 0.0117647, 0.517647, 1)
+self_modulate = Color(0.411765, 0, 0.333333, 1)
+input_pickable = false
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="wallss/Area1d"]
+position = Vector2(6.5, -126.5)
+shape = SubResource("RectangleShape2D_54pbl")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="wallss"]
+position = Vector2(0, -301)
+shape = SubResource("RectangleShape2D_h3koj")
+
+[node name="f block" type="CharacterBody2D" parent="." groups=["blocks"]]
+position = Vector2(837, 1031)
+collision_layer = 3
+collision_mask = 29
+script = ExtResource("5_ikhex")
+metadata/_edit_group_ = true
+
+[node name="f-block" type="Sprite2D" parent="f block"]
+texture = ExtResource("13_akpbm")
+
+[node name="Area2D" type="Area2D" parent="f block"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="f block/Area2D"]
+position = Vector2(-1, -0.25)
+shape = SubResource("RectangleShape2D_xygrr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="f block"]
+position = Vector2(-1, -0.5)
+shape = SubResource("RectangleShape2D_v5igt")
+
+[node name="block d" type="CharacterBody2D" parent="." groups=["blocks"]]
+position = Vector2(230, -127)
+collision_layer = 17
+collision_mask = 15
+script = ExtResource("7_1b5pt")
+metadata/_edit_group_ = true
+
+[node name="d-block" type="Sprite2D" parent="block d"]
+position = Vector2(608, 1472)
+scale = Vector2(1, 1.03097)
+texture = ExtResource("14_bj55c")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="block d"]
+position = Vector2(608.625, 1471.5)
+shape = SubResource("RectangleShape2D_dkyhw")
+
+[node name="Area2D" type="Area2D" parent="block d"]
+position = Vector2(6, 0)
+script = ExtResource("9_x7xfw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="block d/Area2D"]
+position = Vector2(602.5, 1472)
+shape = SubResource("RectangleShape2D_n67yv")
+
+[node name="block a" type="CharacterBody2D" parent="." groups=["blocks"]]
+position = Vector2(230, 128)
+collision_layer = 9
+collision_mask = 23
+script = ExtResource("9_k0jd3")
+metadata/_edit_group_ = true
+
+[node name="RayCast2D" type="RayCast2D" parent="block a"]
+position = Vector2(606, 1109)
+target_position = Vector2(-1, 50)
+collide_with_areas = true
+collide_with_bodies = false
+
+[node name="a-block" type="Sprite2D" parent="block a"]
+position = Vector2(606, 1110)
+texture = ExtResource("12_uy5kp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="block a"]
+position = Vector2(608, 1109)
+shape = SubResource("RectangleShape2D_frc65")
+
+[node name="block g" type="CharacterBody2D" parent="." groups=["blocks"]]
+position = Vector2(230, -311)
+collision_layer = 5
+collision_mask = 27
+script = ExtResource("10_apcma")
+metadata/_edit_group_ = true
+
+[node name="g-block" type="Sprite2D" parent="block g"]
+position = Vector2(606, 1449)
+texture = ExtResource("11_edukf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="block g"]
+position = Vector2(607.25, 1448.5)
+shape = SubResource("RectangleShape2D_arffh")
+debug_color = Color(0, 0.6, 0.701961, 0.419608)
+
+[node name="start" parent="." instance=ExtResource("10_3wm5s")]
+visible = false
+position = Vector2(0, 4)
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -34.0
+offset_top = 1534.0
+offset_right = 932.0
+offset_bottom = 1720.0
+color = Color(1, 1, 1, 0.745098)
+
+[node name="f delete button" type="TextureButton" parent="."]
+offset_left = 255.0
+offset_top = 1570.0
+offset_right = 355.0
+offset_bottom = 1670.0
+texture_normal = ExtResource("13_akpbm")
+texture_pressed = ExtResource("13_akpbm")
+
+[node name="d delete button" type="TextureButton" parent="."]
+offset_left = 628.0
+offset_top = 1570.0
+offset_right = 728.0
+offset_bottom = 1670.0
+texture_normal = ExtResource("14_bj55c")
+texture_pressed = ExtResource("14_bj55c")
+
+[node name="a delete button" type="TextureButton" parent="."]
+offset_left = 64.0
+offset_top = 1570.0
+offset_right = 172.0
+offset_bottom = 1670.0
+texture_normal = ExtResource("12_uy5kp")
+texture_pressed = ExtResource("12_uy5kp")
+
+[node name="g delete button" type="TextureButton" parent="."]
+offset_left = 434.0
+offset_top = 1570.0
+offset_right = 534.0
+offset_bottom = 1670.0
+texture_normal = ExtResource("11_edukf")
+texture_pressed = ExtResource("11_edukf")
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 230.0
+offset_top = 5.0
+offset_right = 592.0
+offset_bottom = 128.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_wu1h1")
+theme_override_font_sizes/font_size = 100
+text = "Coins="
+
+[node name="coins" type="Label" parent="."]
+offset_left = 600.0
+offset_top = 3.0
+offset_right = 1056.0
+offset_bottom = 411.0
+theme_override_fonts/font = ExtResource("2_wu1h1")
+theme_override_font_sizes/font_size = 100
+text = "0
+"
+
+[node name="Button" type="Button" parent="."]
+offset_left = 776.0
+offset_top = 1570.0
+offset_right = 887.0
+offset_bottom = 1670.0
+theme_override_fonts/font = ExtResource("2_wu1h1")
+theme_override_font_sizes/font_size = 35
+text = "Menu"
+
+[node name="RigidBody2D" type="RigidBody2D" parent="."]
+collision_mask = 0
+gravity_scale = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
+position = Vector2(468.375, 1694.62)
+shape = SubResource("RectangleShape2D_1m3hu")
+
+[connection signal="area_entered" from="f block/Area2D" to="f block" method="_on_area_2d_area_entered"]
+[connection signal="area_entered" from="block d/Area2D" to="block d" method="_on_area_2d_area_entered"]
+[connection signal="area_entered" from="block d/Area2D" to="block d/Area2D" method="_on_area_entered"]
+[connection signal="body_entered" from="block d/Area2D" to="block d" method="_on_area_2d_body_entered"]
+[connection signal="body_entered" from="block d/Area2D" to="block d/Area2D" method="_on_body_entered"]
+[connection signal="pressed" from="f delete button" to="f block" method="_on_f_delete_button_pressed"]
+[connection signal="pressed" from="d delete button" to="block d" method="_on_d_delete_button_pressed"]
+[connection signal="pressed" from="a delete button" to="block a" method="_on_a_delete_button_pressed"]
+[connection signal="pressed" from="g delete button" to="block g" method="_on_g_delete_button_pressed"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

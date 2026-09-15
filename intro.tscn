@@ -1,0 +1,75 @@
+[gd_scene load_steps=7 format=3 uid="uid://dae18qlol4gqm"]
+
+[ext_resource type="Script" uid="uid://cx0qn0mk7bwm7" path="res://intro.gd" id="1_8y4bv"]
+[ext_resource type="Texture2D" uid="uid://bnhwy1ep2gso1" path="res://art/Untitled35_20231001143455.png" id="1_bmq8h"]
+
+[sub_resource type="Animation" id="Animation_dfd3h"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_pyhks"]
+resource_name = "fade in "
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.5, 2.8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_mtc54"]
+resource_name = "fade out"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2.6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0.0869564), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_vmf0q"]
+_data = {
+&"RESET": SubResource("Animation_dfd3h"),
+&"fade in ": SubResource("Animation_pyhks"),
+&"fade out": SubResource("Animation_mtc54")
+}
+
+[node name="intro" type="Node2D"]
+script = ExtResource("1_8y4bv")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(465, 854.5)
+scale = Vector2(1, 1.00529)
+texture = ExtResource("1_bmq8h")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1006.0
+offset_bottom = 1802.0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_vmf0q")
+}

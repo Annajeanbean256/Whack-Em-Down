@@ -1,0 +1,614 @@
+[gd_scene load_steps=6 format=3 uid="uid://dxx0lul6pwnsx"]
+
+[ext_resource type="Script" uid="uid://dawp6d0qr4j56" path="res://levels.gd" id="1_7oewt"]
+[ext_resource type="PackedScene" uid="uid://dcy0tbh64kgmy" path="res://back.tscn" id="2_ll8hi"]
+[ext_resource type="FontFile" uid="uid://delh5xf0fvqgx" path="res://fonts/Xolonium-Regular.ttf" id="3_pyo6s"]
+[ext_resource type="StyleBox" uid="uid://dokt5nli0djox" path="res://new_world.tres" id="4_lc3ef"]
+[ext_resource type="Texture2D" uid="uid://bnixplrtxb2lb" path="res://levels board 5th circle.png" id="5_7oewt"]
+
+[node name="levels" type="Node2D"]
+script = ExtResource("1_7oewt")
+
+[node name="back" parent="." instance=ExtResource("2_ll8hi")]
+
+[node name="GridContainer" type="GridContainer" parent="."]
+offset_left = 62.0
+offset_top = 463.0
+offset_right = 970.0
+offset_bottom = 1209.0
+theme_override_constants/h_separation = 70
+theme_override_constants/v_separation = 80
+columns = 6
+
+[node name="level 1" type="Button" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_pyo6s")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/pressed = ExtResource("4_lc3ef")
+theme_override_styles/normal = ExtResource("4_lc3ef")
+text = " 1 "
+
+[node name="level 2" type="Button" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_pyo6s")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/pressed = ExtResource("4_lc3ef")
+theme_override_styles/normal = ExtResource("4_lc3ef")
+text = " 2 "
+
+[node name="level 3" type="Button" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_pyo6s")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/pressed = ExtResource("4_lc3ef")
+theme_override_styles/normal = ExtResource("4_lc3ef")
+text = " 3 "
+
+[node name="level 4" type="Button" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_pyo6s")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/pressed = ExtResource("4_lc3ef")
+theme_override_styles/normal = ExtResource("4_lc3ef")
+text = " 4 "
+
+[node name="level 5" type="Button" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_pyo6s")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/pressed = ExtResource("4_lc3ef")
+theme_override_styles/normal = ExtResource("4_lc3ef")
+text = " 5 "
+
+[node name="level 6" type="Button" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_pyo6s")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/pressed = ExtResource("4_lc3ef")
+theme_override_styles/normal = ExtResource("4_lc3ef")
+text = " 6 "
+
+[node name="level 7" type="Button" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_pyo6s")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/pressed = ExtResource("4_lc3ef")
+theme_override_styles/normal = ExtResource("4_lc3ef")
+text = " 7 "
+
+[node name="level 8" type="Button" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_pyo6s")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/pressed = ExtResource("4_lc3ef")
+theme_override_styles/normal = ExtResource("4_lc3ef")
+text = " 8 "
+
+[node name="level 9" type="Button" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_pyo6s")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/pressed = ExtResource("4_lc3ef")
+theme_override_styles/normal = ExtResource("4_lc3ef")
+text = " 9 "
+
+[node name="level 10" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(1, 1)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_pyo6s")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/pressed = ExtResource("4_lc3ef")
+theme_override_styles/normal = ExtResource("4_lc3ef")
+button_mask = 0
+text = "10"
+icon_alignment = 1
+
+[node name="level 11" type="Button" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_pyo6s")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/pressed = ExtResource("4_lc3ef")
+theme_override_styles/normal = ExtResource("4_lc3ef")
+text = "11"
+
+[node name="level 12" type="Button" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_pyo6s")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/pressed = ExtResource("4_lc3ef")
+theme_override_styles/normal = ExtResource("4_lc3ef")
+text = "12"
+
+[node name="level 13" type="Button" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_pyo6s")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/pressed = ExtResource("4_lc3ef")
+theme_override_styles/normal = ExtResource("4_lc3ef")
+text = "13"
+
+[node name="level 14" type="Button" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_pyo6s")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/pressed = ExtResource("4_lc3ef")
+theme_override_styles/normal = ExtResource("4_lc3ef")
+text = "14"
+
+[node name="level 15" type="Button" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_pyo6s")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/pressed = ExtResource("4_lc3ef")
+theme_override_styles/normal = ExtResource("4_lc3ef")
+text = "15"
+
+[node name="level 16" type="Button" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_pyo6s")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/pressed = ExtResource("4_lc3ef")
+theme_override_styles/normal = ExtResource("4_lc3ef")
+text = "15"
+
+[node name="level 17" type="Button" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_pyo6s")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/pressed = ExtResource("4_lc3ef")
+theme_override_styles/normal = ExtResource("4_lc3ef")
+text = "15"
+
+[node name="level 18" type="Button" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_pyo6s")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/pressed = ExtResource("4_lc3ef")
+theme_override_styles/normal = ExtResource("4_lc3ef")
+text = "15"
+
+[node name="level 19" type="Button" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_pyo6s")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/pressed = ExtResource("4_lc3ef")
+theme_override_styles/normal = ExtResource("4_lc3ef")
+text = "15"
+
+[node name="level 20" type="Button" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_pyo6s")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/pressed = ExtResource("4_lc3ef")
+theme_override_styles/normal = ExtResource("4_lc3ef")
+text = "15"
+
+[node name="level 21" type="Button" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_pyo6s")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/pressed = ExtResource("4_lc3ef")
+theme_override_styles/normal = ExtResource("4_lc3ef")
+text = "15"
+
+[node name="level 22" type="Button" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_pyo6s")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/pressed = ExtResource("4_lc3ef")
+theme_override_styles/normal = ExtResource("4_lc3ef")
+text = "15"
+
+[node name="level 23" type="Button" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_pyo6s")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/pressed = ExtResource("4_lc3ef")
+theme_override_styles/normal = ExtResource("4_lc3ef")
+text = "15"
+
+[node name="level 24" type="Button" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_pyo6s")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/pressed = ExtResource("4_lc3ef")
+theme_override_styles/normal = ExtResource("4_lc3ef")
+text = "15"
+
+[node name="level 25" type="Button" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_pyo6s")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/pressed = ExtResource("4_lc3ef")
+theme_override_styles/normal = ExtResource("4_lc3ef")
+text = "15"
+
+[node name="level 26" type="Button" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_pyo6s")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/pressed = ExtResource("4_lc3ef")
+theme_override_styles/normal = ExtResource("4_lc3ef")
+text = "15"
+
+[node name="level 27" type="Button" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_pyo6s")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/pressed = ExtResource("4_lc3ef")
+theme_override_styles/normal = ExtResource("4_lc3ef")
+text = "15"
+
+[node name="level 28" type="Button" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_pyo6s")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/pressed = ExtResource("4_lc3ef")
+theme_override_styles/normal = ExtResource("4_lc3ef")
+text = "15"
+
+[node name="level 29" type="Button" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_pyo6s")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/pressed = ExtResource("4_lc3ef")
+theme_override_styles/normal = ExtResource("4_lc3ef")
+text = "15"
+
+[node name="level 30" type="Button" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_pyo6s")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/pressed = ExtResource("4_lc3ef")
+theme_override_styles/normal = ExtResource("4_lc3ef")
+text = "15"
+
+[node name="level 31" type="Button" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_pyo6s")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/pressed = ExtResource("4_lc3ef")
+theme_override_styles/normal = ExtResource("4_lc3ef")
+text = "15"
+
+[node name="level 32" type="Button" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_pyo6s")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/pressed = ExtResource("4_lc3ef")
+theme_override_styles/normal = ExtResource("4_lc3ef")
+text = "15"
+
+[node name="level 33" type="Button" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_pyo6s")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/pressed = ExtResource("4_lc3ef")
+theme_override_styles/normal = ExtResource("4_lc3ef")
+text = "15"
+
+[node name="level 34" type="Button" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_pyo6s")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/pressed = ExtResource("4_lc3ef")
+theme_override_styles/normal = ExtResource("4_lc3ef")
+text = "15"
+
+[node name="level 35" type="Button" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_pyo6s")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/pressed = ExtResource("4_lc3ef")
+theme_override_styles/normal = ExtResource("4_lc3ef")
+text = "15"
+
+[node name="level 36" type="Button" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_pyo6s")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/pressed = ExtResource("4_lc3ef")
+theme_override_styles/normal = ExtResource("4_lc3ef")
+text = "15"
+
+[node name="level 37" type="Button" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_pyo6s")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/pressed = ExtResource("4_lc3ef")
+theme_override_styles/normal = ExtResource("4_lc3ef")
+text = "15"
+
+[node name="level 38" type="Button" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_pyo6s")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/pressed = ExtResource("4_lc3ef")
+theme_override_styles/normal = ExtResource("4_lc3ef")
+text = "15"
+
+[node name="level 39" type="Button" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_pyo6s")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/pressed = ExtResource("4_lc3ef")
+theme_override_styles/normal = ExtResource("4_lc3ef")
+text = "15"
+
+[node name="level 40" type="Button" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_pyo6s")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/pressed = ExtResource("4_lc3ef")
+theme_override_styles/normal = ExtResource("4_lc3ef")
+text = "15"
+
+[node name="level 41" type="Button" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_pyo6s")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/pressed = ExtResource("4_lc3ef")
+theme_override_styles/normal = ExtResource("4_lc3ef")
+text = "15"
+
+[node name="level 42" type="Button" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_pyo6s")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/pressed = ExtResource("4_lc3ef")
+theme_override_styles/normal = ExtResource("4_lc3ef")
+text = "15"
+
+[node name="level 43" type="Button" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_pyo6s")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/pressed = ExtResource("4_lc3ef")
+theme_override_styles/normal = ExtResource("4_lc3ef")
+text = "15"
+
+[node name="level 44" type="Button" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_pyo6s")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/pressed = ExtResource("4_lc3ef")
+theme_override_styles/normal = ExtResource("4_lc3ef")
+text = "15"
+
+[node name="level 45" type="Button" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_pyo6s")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/pressed = ExtResource("4_lc3ef")
+theme_override_styles/normal = ExtResource("4_lc3ef")
+text = "15"
+
+[node name="level 46" type="Button" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_pyo6s")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/pressed = ExtResource("4_lc3ef")
+theme_override_styles/normal = ExtResource("4_lc3ef")
+text = "15"
+
+[node name="level 47" type="Button" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_pyo6s")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/pressed = ExtResource("4_lc3ef")
+theme_override_styles/normal = ExtResource("4_lc3ef")
+text = "15"
+
+[node name="level 48" type="Button" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_pyo6s")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/pressed = ExtResource("4_lc3ef")
+theme_override_styles/normal = ExtResource("4_lc3ef")
+text = "15"
+
+[node name="text" type="Label" parent="."]
+offset_top = 35.0
+offset_right = 933.0
+offset_bottom = 401.0
+theme_override_fonts/font = ExtResource("3_pyo6s")
+theme_override_font_sizes/font_size = 100
+text = "CHOOSE
+YOUR 
+CHALLENGE"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="menu" type="Button" parent="."]
+offset_left = 34.0
+offset_top = 1603.0
+offset_right = 184.0
+offset_bottom = 1664.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_pyo6s")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/pressed = ExtResource("4_lc3ef")
+theme_override_styles/normal = ExtResource("4_lc3ef")
+text = "Menu"
+
+[node name="prev5" type="Button" parent="."]
+offset_left = 588.0
+offset_top = 1603.0
+offset_right = 692.0
+offset_bottom = 1664.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_pyo6s")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/pressed = ExtResource("4_lc3ef")
+theme_override_styles/normal = ExtResource("4_lc3ef")
+text = "<--"
+
+[node name="next5" type="Button" parent="."]
+offset_left = 736.0
+offset_top = 1603.0
+offset_right = 840.0
+offset_bottom = 1664.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_pyo6s")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/pressed = ExtResource("4_lc3ef")
+theme_override_styles/normal = ExtResource("4_lc3ef")
+text = "-->"
+
+[node name="level board show" type="Sprite2D" parent="."]
+position = Vector2(375, 1633)
+texture = ExtResource("5_7oewt")
+
+[connection signal="pressed" from="menu" to="." method="_on_menu_pressed"]
+[connection signal="pressed" from="prev5" to="." method="_on_prev_5_pressed"]

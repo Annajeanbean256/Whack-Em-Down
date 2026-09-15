@@ -1,0 +1,229 @@
+[gd_scene load_steps=5 format=3 uid="uid://uwwcmbm80ddr"]
+
+[ext_resource type="FontFile" uid="uid://delh5xf0fvqgx" path="res://fonts/Xolonium-Regular.ttf" id="1_c5ut7"]
+[ext_resource type="Script" uid="uid://becgaxhvy6a1l" path="res://start.gd" id="1_jq0vl"]
+[ext_resource type="PackedScene" uid="uid://dcy0tbh64kgmy" path="res://back.tscn" id="2_po5bj"]
+[ext_resource type="StyleBox" uid="uid://dokt5nli0djox" path="res://new_world.tres" id="4_86wcw"]
+
+[node name="start" type="Node2D"]
+script = ExtResource("1_jq0vl")
+
+[node name="back" parent="." instance=ExtResource("2_po5bj")]
+
+[node name="Label" type="Label" parent="."]
+offset_left = -10.0
+offset_top = 17.0
+offset_right = 923.0
+offset_bottom = 566.0
+theme_override_fonts/font = ExtResource("1_c5ut7")
+theme_override_font_sizes/font_size = 150
+text = "WHACK
+'EM 
+DOWN"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="endless" type="Button" parent="."]
+offset_left = 132.0
+offset_top = 901.0
+offset_right = 808.0
+offset_bottom = 1034.0
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_c5ut7")
+theme_override_font_sizes/font_size = 100
+theme_override_styles/focus = ExtResource("4_86wcw")
+theme_override_styles/disabled_mirrored = ExtResource("4_86wcw")
+theme_override_styles/disabled = ExtResource("4_86wcw")
+theme_override_styles/hover_pressed_mirrored = ExtResource("4_86wcw")
+theme_override_styles/hover_pressed = ExtResource("4_86wcw")
+theme_override_styles/hover_mirrored = ExtResource("4_86wcw")
+theme_override_styles/hover = ExtResource("4_86wcw")
+theme_override_styles/pressed_mirrored = ExtResource("4_86wcw")
+theme_override_styles/pressed = ExtResource("4_86wcw")
+theme_override_styles/normal_mirrored = ExtResource("4_86wcw")
+theme_override_styles/normal = ExtResource("4_86wcw")
+text = "Endless"
+
+[node name="levels" type="Button" parent="."]
+offset_left = 132.0
+offset_top = 734.0
+offset_right = 808.0
+offset_bottom = 862.0
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_c5ut7")
+theme_override_font_sizes/font_size = 100
+theme_override_styles/focus = ExtResource("4_86wcw")
+theme_override_styles/disabled_mirrored = ExtResource("4_86wcw")
+theme_override_styles/disabled = ExtResource("4_86wcw")
+theme_override_styles/hover_pressed_mirrored = ExtResource("4_86wcw")
+theme_override_styles/hover_pressed = ExtResource("4_86wcw")
+theme_override_styles/hover_mirrored = ExtResource("4_86wcw")
+theme_override_styles/hover = ExtResource("4_86wcw")
+theme_override_styles/pressed_mirrored = ExtResource("4_86wcw")
+theme_override_styles/pressed = ExtResource("4_86wcw")
+theme_override_styles/normal_mirrored = ExtResource("4_86wcw")
+theme_override_styles/normal = ExtResource("4_86wcw")
+text = "Levels"
+
+[node name="play story" type="Button" parent="."]
+offset_left = 132.0
+offset_top = 566.0
+offset_right = 808.0
+offset_bottom = 694.0
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_c5ut7")
+theme_override_font_sizes/font_size = 100
+theme_override_styles/focus = ExtResource("4_86wcw")
+theme_override_styles/disabled_mirrored = ExtResource("4_86wcw")
+theme_override_styles/disabled = ExtResource("4_86wcw")
+theme_override_styles/hover_pressed_mirrored = ExtResource("4_86wcw")
+theme_override_styles/hover_pressed = ExtResource("4_86wcw")
+theme_override_styles/hover_mirrored = ExtResource("4_86wcw")
+theme_override_styles/hover = ExtResource("4_86wcw")
+theme_override_styles/pressed_mirrored = ExtResource("4_86wcw")
+theme_override_styles/pressed = ExtResource("4_86wcw")
+theme_override_styles/normal_mirrored = ExtResource("4_86wcw")
+theme_override_styles/normal = ExtResource("4_86wcw")
+text = "Play Story"
+
+[node name="quit" type="Button" parent="."]
+offset_left = 132.0
+offset_top = 1530.0
+offset_right = 808.0
+offset_bottom = 1664.0
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_c5ut7")
+theme_override_font_sizes/font_size = 100
+theme_override_styles/focus = ExtResource("4_86wcw")
+theme_override_styles/disabled_mirrored = ExtResource("4_86wcw")
+theme_override_styles/disabled = ExtResource("4_86wcw")
+theme_override_styles/hover_pressed_mirrored = ExtResource("4_86wcw")
+theme_override_styles/hover_pressed = ExtResource("4_86wcw")
+theme_override_styles/hover_mirrored = ExtResource("4_86wcw")
+theme_override_styles/hover = ExtResource("4_86wcw")
+theme_override_styles/pressed_mirrored = ExtResource("4_86wcw")
+theme_override_styles/pressed = ExtResource("4_86wcw")
+theme_override_styles/normal_mirrored = ExtResource("4_86wcw")
+theme_override_styles/normal = ExtResource("4_86wcw")
+text = "Quit"
+
+[node name="settings" type="Button" parent="."]
+offset_left = 132.0
+offset_top = 1263.0
+offset_right = 808.0
+offset_bottom = 1391.0
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_c5ut7")
+theme_override_font_sizes/font_size = 100
+theme_override_styles/focus = ExtResource("4_86wcw")
+theme_override_styles/disabled_mirrored = ExtResource("4_86wcw")
+theme_override_styles/disabled = ExtResource("4_86wcw")
+theme_override_styles/hover_pressed_mirrored = ExtResource("4_86wcw")
+theme_override_styles/hover_pressed = ExtResource("4_86wcw")
+theme_override_styles/hover_mirrored = ExtResource("4_86wcw")
+theme_override_styles/hover = ExtResource("4_86wcw")
+theme_override_styles/pressed_mirrored = ExtResource("4_86wcw")
+theme_override_styles/pressed = ExtResource("4_86wcw")
+theme_override_styles/normal_mirrored = ExtResource("4_86wcw")
+theme_override_styles/normal = ExtResource("4_86wcw")
+text = "Settings"
+
+[node name="shop" type="Button" parent="."]
+offset_left = 132.0
+offset_top = 1083.0
+offset_right = 808.0
+offset_bottom = 1211.0
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_c5ut7")
+theme_override_font_sizes/font_size = 100
+theme_override_styles/focus = ExtResource("4_86wcw")
+theme_override_styles/disabled_mirrored = ExtResource("4_86wcw")
+theme_override_styles/disabled = ExtResource("4_86wcw")
+theme_override_styles/hover_pressed_mirrored = ExtResource("4_86wcw")
+theme_override_styles/hover_pressed = ExtResource("4_86wcw")
+theme_override_styles/hover_mirrored = ExtResource("4_86wcw")
+theme_override_styles/hover = ExtResource("4_86wcw")
+theme_override_styles/pressed_mirrored = ExtResource("4_86wcw")
+theme_override_styles/pressed = ExtResource("4_86wcw")
+theme_override_styles/normal_mirrored = ExtResource("4_86wcw")
+theme_override_styles/normal = ExtResource("4_86wcw")
+text = "Shop"
+
+[connection signal="pressed" from="endless" to="." method="_on_endless_pressed"]
+[connection signal="pressed" from="levels" to="." method="_on_levels_pressed"]
+[connection signal="pressed" from="play story" to="." method="_on_play_story_pressed"]
+[connection signal="pressed" from="quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="settings" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="shop" to="." method="_on_shop_pressed"]
