@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://dcy0tbh64kgmy"]
+
+[ext_resource type="Script" uid="uid://bu3j7hoi6ym7k" path="res://back.gd" id="1_5mgj1"]
+[ext_resource type="Texture2D" uid="uid://bc035t1j30cc" path="res://bg 3.png" id="2_fa4m5"]
+[ext_resource type="Texture2D" uid="uid://yrf5s2jm0vxn" path="res://bg 5.png" id="3_imkc5"]
+[ext_resource type="Texture2D" uid="uid://cqxn0mj5su6kd" path="res://bg 8.png" id="4_2dowf"]
+
+[node name="back" type="Node2D"]
+z_index = -1
+position = Vector2(476.25, 861)
+scale = Vector2(8.75664, 8.43269)
+script = ExtResource("1_5mgj1")
+
+[node name="bg 3" type="Sprite2D" parent="."]
+position = Vector2(-0.0285339, -7.62939e-06)
+scale = Vector2(0.328918, 0.321334)
+texture = ExtResource("2_fa4m5")
+
+[node name="bg 8" type="Sprite2D" parent="."]
+visible = false
+z_index = -1
+position = Vector2(0.116238, 3.50592)
+scale = Vector2(1.0222, 1.08374)
+texture = ExtResource("4_2dowf")
+
+[node name="bg 5" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(-1.96817, 3.2358)
+scale = Vector2(0.331516, 0.317673)
+texture = ExtResource("3_imkc5")

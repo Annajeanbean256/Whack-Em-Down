@@ -1,0 +1,44 @@
+[gd_scene load_steps=4 format=3 uid="uid://c5pak0gb1f1o5"]
+
+[ext_resource type="Texture2D" uid="uid://crit1y4fcj7n4" path="res://art/playerGrey_up1.png" id="2_61u4h"]
+
+[sub_resource type="GDScript" id="GDScript_4qax3"]
+script/source = "extends KinematicBody2D
+
+@export var walkspeed = 200
+
+@export var gravity = 600
+
+@export var jumpforce = 500
+var velocity = Vector2()
+
+func _physics_process(delta):
+	velocity.y += gravity * delta
+	
+	if Input.is_action_pressed(\"ui_left\"):
+		velocity.x = -walkspeed
+	if Input.is_action_pressed(\"ui_right\"):
+		velocity.x = walkspeed
+	else:
+		velocity.x = lerp(velocity.x, 0, 0.1)
+	if Input.is_action_just_pressed(\"ui_up\") and is_on_floor():
+		velocity.y = -jumpforce
+	velocity = move_and_slide(velocity, Vector2.UP)
+	
+
+"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5oapk"]
+size = Vector2(96, 130)
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+position = Vector2(502, 618)
+script = SubResource("GDScript_4qax3")
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_61u4h")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-2, 2)
+shape = SubResource("RectangleShape2D_5oapk")

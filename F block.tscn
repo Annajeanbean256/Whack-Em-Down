@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://b1mqyc3u7hluo"]
+
+[ext_resource type="Script" uid="uid://6w0kvne6dyd4" path="res://F_block.gd" id="1_ulcpb"]
+[ext_resource type="Texture2D" uid="uid://cpq5lp82tc3r8" path="res://f new block.jpg" id="2_mtova"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_evaru"]
+friction = 0.0
+absorbent = true
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qehvv"]
+size = Vector2(101, 101)
+
+[node name="F block" type="RigidBody2D"]
+physics_material_override = SubResource("PhysicsMaterial_evaru")
+sleeping = true
+lock_rotation = true
+freeze_mode = 1
+script = ExtResource("1_ulcpb")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_mtova")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, -0.5)
+shape = SubResource("RectangleShape2D_qehvv")
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+target_position = Vector2(0, 52)
+collide_with_areas = true
+collide_with_bodies = false

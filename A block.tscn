@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://bpgjsqusk4ipd"]
+
+[ext_resource type="Script" uid="uid://crmj4pudu7hhk" path="res://A_block.gd" id="1_5aiai"]
+[ext_resource type="Texture2D" uid="uid://d2owk8s8iorbw" path="res://hope good block size.jpg" id="2_f7cbq"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_evaru"]
+friction = 0.0
+absorbent = true
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qehvv"]
+size = Vector2(100, 100)
+
+[node name="A block" type="RigidBody2D"]
+physics_material_override = SubResource("PhysicsMaterial_evaru")
+sleeping = true
+lock_rotation = true
+freeze_mode = 1
+script = ExtResource("1_5aiai")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_f7cbq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_qehvv")
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+target_position = Vector2(0, 53)
+collide_with_areas = true
+collide_with_bodies = false
